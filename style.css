@@ -150,6 +150,7 @@ ul .menu-div .logo {
         top: 3px;
         right: -100%;
         display: flex;
+        
         justify-content: start;
         flex-direction: column;
         height: 100%;
@@ -161,9 +162,8 @@ ul .menu-div .logo {
     ul li {
 
         margin-left: 20px;
+         margin-right: 20px;
         margin-top: 1px;
-
-
     }
 
     ul hr {
