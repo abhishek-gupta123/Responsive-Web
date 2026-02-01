@@ -36,7 +36,7 @@ nav #check {
     display: none;
 }
 
-nav label i {
+nav label #menu-icon {
     display: none;
 }
 
@@ -133,12 +133,19 @@ ul .signbtn {
     height: auto;
 }
 
+ul .close-menu {
+    display: none;
+}
+ul hr{
+    display: none;
+}
+
 @media (max-width:700px) {
 
     ul {
         background-color: #fff;
         position: fixed;
-        top: 60px;
+        top: 24px;
         right: -100%;
         display: flex;
         justify-content: start;
@@ -150,23 +157,47 @@ ul .signbtn {
     }
 
     ul li {
-        
+
         margin-left: 20px;
         margin-top: 20px;
-       
+
 
     }
 
+    ul hr {
+        display: block;
+        margin-top: 35px;
+    }
+
     ul li a {
-        
+
         font-size: 1rem;
         padding: 4px 10px;
         transition: all .3s ease;
 
     }
 
+    ul .close-menu {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        font-size: 1.3rem;
+        cursor: pointer;
+
+
+    }
+
+    ul .close-menu i {
+        padding: .2em;
+
+        transition: all .3s;
+        border-radius: 5px;
+    }
+
+
     ul li a:hover {
-       
+
         color: rgb(255, 122, 46);
     }
 
@@ -180,7 +211,7 @@ ul .signbtn {
         font-size: 1.3rem;
     }
 
-    nav label i {
+    nav label #menu-icon {
         display: block;
         cursor: pointer;
         font-size: 1.3rem;
@@ -203,7 +234,6 @@ ul .signbtn {
 
     #check:checked~ul {
         right: 0%;
-
     }
 
     i:hover {
@@ -211,9 +241,6 @@ ul .signbtn {
 
     }
 
-    #check:checked~label i::before {
-        content: '\F4C7';
-    }
     .container {
         display: flex;
         flex-direction: column;
